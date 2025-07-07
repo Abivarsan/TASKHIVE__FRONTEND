@@ -1,7 +1,7 @@
 import React from 'react'
 import Topbar from '../Compornents/Topbar';
 import DeveloperSidebar from '../Components-Bhaumika/DeveloperSidebar';
-import '../Pages/PageStructure.css';
+import '../Pages/Styles/PageStructure.css'
 
 function Payment() {
   return (

@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import ProtectedRoute from './Auth/ProtectedRoute';
 import { AuthProvider } from './Auth/AuthContext';
-import AdminDashboard from "./Pages-Thusharga/AdminDashboard";
+import AdminDashboard from "./Pages/Admin/AdminDashboard";
 import ProjectCreation from "./Pages-Suraj/ProjectCreation";
 import ProjectList from "./Pages-Suraj/ProjectList";
 import TaskCreation from "./Pages-Suraj/TaskCreation";
@@ -29,14 +29,14 @@ import ProjectFileViewPage from "./Pages-Baumika/ProjectFileViewPage";
 
 
 import BudgetEditPage from "./Pages-Chamara/BudgetEditPage";
-import UserManagement from "./Pages-Thusharga/UserManagement";
-import UserCreation from "./Pages-Thusharga/UserCreation";
-import ViewUserList from "./Pages-Thusharga/ViewUserList";
-import LoginForm from "./Pages-Thusharga/LoginForm";
-import ResetPassword from "./Pages-Thusharga/ResetPassword";
-import ForgotPassword from "./Pages-Thusharga/ForgotPassword";
+import UserManagement from "./Pages/Admin/UserManagement";
+import UserCreation from "./Pages/Admin/UserCreation";
+import ViewUserList from "./Pages/Admin/ViewUserList";
+import LoginForm from "./Pages/Admin/LoginForm";
+import ResetPassword from "./Pages/Admin/ResetPassword";
+import ForgotPassword from "./Pages/Admin/ForgotPassword";
 import TransactionPage from "./Pages-Chamara/TransactionPage";
-import ViewUserDetail from "./Pages-Thusharga/ViewUserDetail";
+import ViewUserDetail from "./Pages/Admin/ViewUserDetail";
 
 import TaskList from "./Pages-Suraj/TaskList";
 import TaskDetailsPage from "./Pages-Suraj/TaskDetailsPage";
@@ -60,7 +60,7 @@ import PMFullTaskViewPage from "./Pages-Suraj/Pages-ProjectManager-Suraj/PMFullT
 import UpdateProjectPage from "./Pages-Suraj/UpdateProjectPage";
 import UpdateTaskPage from "./Pages-Suraj/UpdateTaskPage";
 
-import EditProfile from "./Pages-Thusharga/EditProfile";
+import EditProfile from "./Pages/Admin/EditProfile";
 
 
 

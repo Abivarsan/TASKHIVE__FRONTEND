@@ -1,9 +1,13 @@
-import React, { useState , useRef} from "react";
+import React, { useState , useRef, useEffect} from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import './styles/UserCreationForm.css';
 import { useNavigate } from 'react-router-dom';
 import apiRequest from '../Auth/ApiService';
+import axios from 'axios';
 import emailjs from "emailjs-com";
+emailjs.init('WcuGZ2ivU-n9OBxuF'); 
+
+
 
 export default function UserCreationForm() {
   const [firstName, setFirstName] = useState('');
@@ -25,6 +29,9 @@ export default function UserCreationForm() {
   const [userDetails, setUserDetails] = useState(null);
   const navigate = useNavigate();
   const fileInputRef = useRef(null);  
+   const [usersCategories, setUsersCategories] = useState([]);
+    const [jobRoles, setJobRoles] = useState([]);
+ 
 
   const handleImageChange = (e) => {
     if (e.target.files && e.target.files[0]) {
@@ -38,6 +45,26 @@ export default function UserCreationForm() {
     } 
   };
 
+      useEffect(() => {
+    axios.get(`http://localhost:5228/api/User/UsersCategories`) 
+      .then(response => {
+        setUsersCategories(response.data);
+      })
+      .catch(error => {
+        console.error("Error fetching user categories:", error);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios.get(`http://localhost:5228/api/User/JobRoles`) 
+      .then(response => {
+        setJobRoles(response.data);
+      })
+      .catch(error => {
+        console.error("Error fetching JobRoles:", error);
+      });
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormSubmitted(true);
@@ -45,6 +72,8 @@ export default function UserCreationForm() {
     if (!validateForm()) {
       return;
     }
+
+
   
     const formData = new FormData();
     formData.append("UserName", userName);
@@ -89,9 +118,9 @@ export default function UserCreationForm() {
   
 
   const sendEmail = (password, userName, userEmail) => {
-    const serviceID = 'service_9zjumbx';
-    const templateID = 'template_0y9c7xm';
-    const publicKey = 'T4Kg7zhw6fdHfxh6K';
+    const serviceID = 'service_42yhret';
+    const templateID = 'template_qtrb6ll';
+    const publicKey = 'WcuGZ2ivU-n9OBxuF';
 
     const templateParams = {
       user_name: userName,
@@ -108,7 +137,7 @@ export default function UserCreationForm() {
       })
       .catch((error) => {
         console.error("FAILED...", error);
-        alert("Failed to send email. Please try again later.");
+        alert("Failed to send email. Please try again later." + error.text || error.message);
       });
   };
 
@@ -236,30 +265,25 @@ export default function UserCreationForm() {
           <Row className="mb-10">
             <Form.Group as={Col} controlId="formGridUserCategory">
               <Form.Label>User Category</Form.Label>
-              <Form.Control as="select" value={userCategory} onChange={(e) => setUserCategory(e.target.value)}>
-                <option>Select User Category Type</option>
-                <option>Admin</option>
-                <option>Manager</option>
-                <option>Developer</option>
+              <Form.Control as="select" name="UserCategoryType" value={userCategory} onChange={(e) => setUserCategory(e.target.value)}>
+                <option value="">Select User Category Type</option>
+          {usersCategories.map((category) => (
+            <option key={category.userCategoryId} value={category.userCategoryType}>
+              {category.userCategoryType}
+            </option>
+          ))}
               </Form.Control>
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridJobOptions">
               <Form.Label>Job Role</Form.Label>
-              <Form.Control as="select" value={jobRole} onChange={(e) => setSelectedJob(e.target.value)}>
-                <option>Select Job Role</option>
-                <option>Software Engineer</option>
-                <option>UI/UX Designer</option>
-                <option>Network Engineer</option>
-                <option>Database Administrator</option>
-                <option>Quality Assurance</option>
-                <option>Data Scientist</option>
-                <option>Cloud Engineer</option>
-                <option>Programmar</option>
-                <option>Web Developer</option>
-                <option>System Analyst</option>
-                <option>Cloud Architect</option>
-                <option>Data Quality Manager</option>
+              <Form.Control as="select" name="JobRole" value={jobRole} onChange={(e) => setSelectedJob(e.target.value)}>
+                <option value="">Select Job Role</option>
+    {jobRoles.map((role) => (
+      <option key={role.jobRoleId} value={role.jobRoleType}>
+        {role.jobRoleType}
+      </option>
+    ))}
               </Form.Control>
             </Form.Group>
           </Row>

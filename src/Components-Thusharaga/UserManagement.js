@@ -37,7 +37,7 @@ export default function UserManagement() {
       fetchData(); // If search term is empty, fetch all data
     } else {
       try {
-        const result = await apiRequest(`http://localhost:5528/api/User/search?term=${searchTerm}`);
+        const result = await apiRequest(`http://localhost:5228/api/User/search?term=${searchTerm}`);
         setData(result);
       } catch (error) {
         console.error("Error searching data:", error);

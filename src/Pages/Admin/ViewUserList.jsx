@@ -1,7 +1,7 @@
 import UserList from '../../Components-Thusharaga/UserList'
 import Sidebar from '../../Compornents/Sidebar'
 import Topbar from '../../Compornents/Topbar'
-import '../Pages/PageStructure.css'
+import '../Styles/PageStructure.css'
 
 
 import React from 'react'

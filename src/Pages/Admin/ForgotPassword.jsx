@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/LoginForm.css';
+import './Styles/LoginForm.css';
 import { FaEnvelope, FaUser } from "react-icons/fa";
 import apiRequest from '../../Auth/ApiService';
 import emailjs from "emailjs-com";

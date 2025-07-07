@@ -2,7 +2,7 @@ import React from 'react'
 import ClientDetailView from '../Components-Hemal/ClientDetailView'
 import Sidebar from '../Compornents/Sidebar'
 import Topbar from '../Compornents/Topbar'
-import '../Pages/PageStructure.css'
+import '../Pages/Styles/PageStructure.css'
 
 function ViewClientDetail() {
   return (

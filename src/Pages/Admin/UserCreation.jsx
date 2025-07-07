@@ -2,7 +2,7 @@ import React from 'react'
 import UserCreationForm from '../../Components-Thusharaga/UserCreationForm'
 import Sidebar from '../../Compornents/Sidebar'
 import Topbar from '../../Compornents/Topbar'
-import '../Pages/PageStructure.css'
+import '../Styles/PageStructure.css'
 
 function UserCreation() {
   return (

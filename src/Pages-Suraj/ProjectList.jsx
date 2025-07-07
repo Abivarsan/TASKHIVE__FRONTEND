@@ -1,7 +1,7 @@
 import React from 'react'
 import Topbar from "../Compornents/Topbar";
 import Sidebar from "../Compornents/Sidebar";
-import '../Pages/PageStructure.css'
+import '../Pages/Styles/PageStructure.css'
 //import Projectlist from '../Components-Suraj/List';
 import ProjectListComponent from '../Components-Suraj/ProjectListComponent';
 import { Button } from 'react-bootstrap';

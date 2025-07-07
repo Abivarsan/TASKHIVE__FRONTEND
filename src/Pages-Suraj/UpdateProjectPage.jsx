@@ -1,7 +1,7 @@
 import React from 'react'
 import Topbar from "../Compornents/Topbar";
 import Sidebar from "../Compornents/Sidebar";
-import '../Pages/PageStructure.css'
+import '../Pages/Styles/PageStructure.css'
 import UpdateProjectCom from '../Components-Suraj/UpdateProjectCom';
 
 export default function UpdateProjectPage() {

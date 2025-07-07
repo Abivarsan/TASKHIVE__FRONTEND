@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from '../Compornents/Sidebar';
-import '../Pages/PageStructure.css';
+import '../Pages/Styles/PageStructure.css'
 import Topbar from '../Compornents/Topbar';
 import Piechart from '../Components-Chamara/Piechart';
 import Barchart from '../Components-Chamara/Barchart';

@@ -18,7 +18,7 @@ function AdminDashboardComponent({ showRateUpdate }) {
 
   const fetchDashboardData = async () => {
     try {
-      const response = await axios.get(`https://localhost:44339/api/AdminDashboard`);
+      const response = await axios.get(`http://localhost:5228/api/AdminDashboard`);
       console.log(response.data);
       setTotalAdmins(response.data.totalAdmins);
       setTotalDevelopers(response.data.totalDevelopers);
