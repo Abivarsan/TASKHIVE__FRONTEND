@@ -3,63 +3,54 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import ProtectedRoute from './Auth/ProtectedRoute';
 import { AuthProvider } from './Auth/AuthContext';
 import AdminDashboard from "./Pages/Admin/AdminDashboard";
-import ProjectCreation from "./Pages-Suraj/ProjectCreation";
-import ProjectList from "./Pages-Suraj/ProjectList";
-import TaskCreation from "./Pages-Suraj/TaskCreation";
+import ProjectCreation from "./Pages/Project/ProjectCreation";
+import ProjectList from "./Pages/Project/ProjectList";
+import TaskCreation from "./Pages/Project/TaskCreation";
 // import ClientList from "./Pages-Hemal/ClientList";
 // import Payments from "./Pages-Hemal/Payments";
- import Budgetplan from "./Pages-Chamara/Budgetplan";
+ import Budgetplan from "./Pages/Finance/Budgetplan";
 // import SendEmail from "./Pages-Hemal/SendEmail";
-import AdminProjectViewPage from "./Pages-Suraj/AdminPojectViewPage";
-import AddDevelopersPage from "./Pages-Suraj/AddDevelopersPage";
+import AdminProjectViewPage from "./Pages/Admin/AdminPojectViewPage";
+import AddDevelopersPage from "./Pages/Project/AddDevelopersPage";
 // import BudgetEstimationForm from "./Pages-Chamara/BudgetEstimationForm";
-
-//newly added Pages 
-import DashboardDeveloper from "./Pages-Baumika/DashboardDeveloper";
-import ProjectDeveloper from "./Pages-Baumika/ProjectDeveloper";
-import TaskDeveloper from "./Pages-Baumika/TaskDeveloper";
-import ProgressDeveloper from "./Pages-Baumika/ProgressDeveloper";
-import ProjectDescriptionDeveloper from "./Pages-Baumika/ProjectDescriptionDeveloper";
-import TaskDescriptionDeveloper from "./Pages-Baumika/TaskDescriptionDeveloper";
-import TaskRecord from "./Pages-Baumika/TaskRecord";
-import ProjectReport from "./Pages-Baumika/ProjectReport";
-import ProjectModuleReport from "./Pages-Baumika/ProjectModuleReport";
-import TeamDescriptionDeveloper from "./Pages-Baumika/TeamDescriptionDeveloper";
-import ProjectFileViewPage from "./Pages-Baumika/ProjectFileViewPage";
-
-
-import BudgetEditPage from "./Pages-Chamara/BudgetEditPage";
+import DashboardDeveloper from "./Pages/Developer/DashboardDeveloper";
+import ProjectDeveloper from "./Pages/Developer/ProjectDeveloper";
+import TaskDeveloper from "./Pages/Developer/TaskDeveloper";
+import ProgressDeveloper from "./Pages/Developer/ProgressDeveloper";
+import ProjectDescriptionDeveloper from "./Pages/Developer/ProjectDescriptionDeveloper";
+import TaskDescriptionDeveloper from "./Pages/Developer/TaskDescriptionDeveloper";
+import TaskRecord from "./Pages/Developer/TaskRecord";
+import ProjectReport from "./Pages/Developer/ProjectReport";
+import ProjectModuleReport from "./Pages/Developer/ProjectModuleReport";
+import TeamDescriptionDeveloper from "./Pages/Developer/TeamDescriptionDeveloper";
+import ProjectFileViewPage from "./Pages/Developer/ProjectFileViewPage";
+import BudgetEditPage from "./Pages/Finance/BudgetEditPage";
 import UserManagement from "./Pages/Admin/UserManagement";
 import UserCreation from "./Pages/Admin/UserCreation";
 import ViewUserList from "./Pages/Admin/ViewUserList";
 import LoginForm from "./Pages/Admin/LoginForm";
 import ResetPassword from "./Pages/Admin/ResetPassword";
 import ForgotPassword from "./Pages/Admin/ForgotPassword";
-import TransactionPage from "./Pages-Chamara/TransactionPage";
+import TransactionPage from "./Pages/Finance/TransactionPage";
 import ViewUserDetail from "./Pages/Admin/ViewUserDetail";
-
-import TaskList from "./Pages-Suraj/TaskList";
-import TaskDetailsPage from "./Pages-Suraj/TaskDetailsPage";
-import ProjectManagerDashboard from "./Pages-Suraj/ProjectManagerDashboard";
-import PMprojectListPage from "./Pages-Suraj/Pages-ProjectManager-Suraj/PMprojectListPage";
-import PMprojectDetailsPage from "./Pages-Suraj/Pages-ProjectManager-Suraj/PMprojectDetailsPage";
-import PMtaskCreationPage from "./Pages-Suraj/Pages-ProjectManager-Suraj/PMtaskCreationPage";
-import PMtaskListPage from "./Pages-Suraj/Pages-ProjectManager-Suraj/PMtaskListPage";
-import PMaddDevelopersPage from "./Pages-Suraj/Pages-ProjectManager-Suraj/PMaddDevelopersPage";
-import PMtaskDetailsPage from "./Pages-Suraj/Pages-ProjectManager-Suraj/PMtaskDetailsPage";
-import FinanceDigram from "./Pages-Chamara/FinanceDigram";
-import Payment from "./Pages-Chamara/Payment";
-
-import ClientCreation from "./Pages-Hemal/ClientCreation";
-import ViewClientDetail from "./Pages-Hemal/ViewClientDetail";
-import ViewClientList from "./Pages-Hemal/ViewClientList";
-
-import FullTaskListPage from "./Pages-Suraj/FullTaskListPage";
-import PMFullTaskViewPage from "./Pages-Suraj/Pages-ProjectManager-Suraj/PMFullTaskViewPage";
-
-import UpdateProjectPage from "./Pages-Suraj/UpdateProjectPage";
-import UpdateTaskPage from "./Pages-Suraj/UpdateTaskPage";
-
+import TaskList from "./Pages/Project/TaskList";
+import TaskDetailsPage from "./Pages/Project/TaskDetailsPage";
+import ProjectManagerDashboard from "./Pages/Project/ProjectManagerDashboard";
+import PMprojectListPage from "./Pages/Project/Project-Manager/PMprojectListPage";
+import PMprojectDetailsPage from "./Pages/Project/Project-Manager/PMprojectDetailsPage";
+import PMtaskCreationPage from "./Pages/Project/Project-Manager/PMtaskCreationPage";
+import PMtaskListPage from "./Pages/Project/Project-Manager/PMtaskListPage";
+import PMaddDevelopersPage from "./Pages/Project/Project-Manager/PMaddDevelopersPage";
+import PMtaskDetailsPage from "./Pages/Project/Project-Manager/PMtaskDetailsPage";
+import FinanceDigram from "./Pages/Finance/FinanceDigram";
+import Payment from "./Pages/Finance/Payment";
+import ClientCreation from "./Pages/Client/ClientCreation";
+import ViewClientDetail from "./Pages/Client/ViewClientDetail";
+import ViewClientList from "./Pages/Client/ViewClientList";
+import FullTaskListPage from "./Pages/Project/FullTaskListPage";
+import PMFullTaskViewPage from "./Pages/Project/Project-Manager/PMFullTaskViewPage";
+import UpdateProjectPage from "./Pages/Project/UpdateProjectPage";
+import UpdateTaskPage from "./Pages/Project/UpdateTaskPage";
 import EditProfile from "./Pages/Admin/EditProfile";
 
 

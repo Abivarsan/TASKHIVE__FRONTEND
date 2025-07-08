@@ -1,26 +1,26 @@
 import React from 'react'
+import ClientCreationForm from '../../Components/Client-Components/ClientCreationForm'
 import Sidebar from '../../Components/Common-Components/Sidebar'
 import Topbar from '../../Components/Common-Components/Topbar'
 import '../Styles/PageStructure.css'
-import PasswordReset from '../../Components/Admin-Components/PasswordReset'
 
-function ResetPassword() {
+function ClientCreation() {
   return (
+   
     <div className="FullPage">
       
       <Sidebar/>
       <Topbar/>
      
       <div className="Content">
-       
-        <PasswordReset/>
+     
+        <ClientCreationForm/>
      
       </div>
       
     </div>
 
-    
-  )
+    )
 }
 
-export default ResetPassword
+export default ClientCreation

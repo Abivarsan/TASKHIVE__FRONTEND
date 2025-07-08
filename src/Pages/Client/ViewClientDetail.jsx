@@ -1,10 +1,10 @@
 import React from 'react'
+import ClientDetailView from '../../Components/Client-Components/ClientDetailView'
 import Sidebar from '../../Components/Common-Components/Sidebar'
 import Topbar from '../../Components/Common-Components/Topbar'
 import '../Styles/PageStructure.css'
-import PasswordReset from '../../Components/Admin-Components/PasswordReset'
 
-function ResetPassword() {
+function ViewClientDetail() {
   return (
     <div className="FullPage">
       
@@ -13,14 +13,12 @@ function ResetPassword() {
      
       <div className="Content">
        
-        <PasswordReset/>
+      <ClientDetailView/>
      
       </div>
       
     </div>
-
-    
-  )
+      )
 }
 
-export default ResetPassword
+export default ViewClientDetail

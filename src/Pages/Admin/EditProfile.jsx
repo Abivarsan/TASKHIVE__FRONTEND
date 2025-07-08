@@ -1,8 +1,8 @@
 import React from 'react'
-import Sidebar from '../../Compornents/Sidebar'
-import Topbar from '../../Compornents/Topbar'
+import Sidebar from '../../Components/Common-Components/Sidebar'
+import Topbar from '../../Components/Common-Components/Topbar'
 import '../Styles/PageStructure.css'
-import EditProfileComponent from '../../Components-Thusharaga/EditProfile'
+import EditProfileComponent from '../../Components/Admin-Components/EditProfile'
 
 function EditProfile() {
   return (

@@ -1,4 +1,6 @@
-import UserList from '../../Components/Admin-Components/UserList'
+
+
+import ClientList from '../../Components/Client-Components/ClientList'
 import Sidebar from '../../Components/Common-Components/Sidebar'
 import Topbar from '../../Components/Common-Components/Topbar'
 import '../Styles/PageStructure.css'
@@ -6,7 +8,7 @@ import '../Styles/PageStructure.css'
 
 import React from 'react'
 
-function ViewUserList() {
+function ViewClientList() {
   return (
     <div className="FullPage">
       
@@ -14,8 +16,8 @@ function ViewUserList() {
     <Topbar/>
     
     <div className="Content">
-      
-      <UserList/>
+   
+      <ClientList/>
    
     </div>
     
@@ -23,4 +25,4 @@ function ViewUserList() {
   )
 }
 
-export default ViewUserList
+export default ViewClientList

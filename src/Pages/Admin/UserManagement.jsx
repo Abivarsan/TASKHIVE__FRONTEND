@@ -1,6 +1,6 @@
-import UserList from '../../Components-Thusharaga/UserManagement'
-import Sidebar from '../../Compornents/Sidebar'
-import Topbar from '../../Compornents/Topbar'
+import UserList from '../../Components/Admin-Components/UserManagement'
+import Sidebar from '../../Components/Common-Components/Sidebar'
+import Topbar from '../../Components/Common-Components/Topbar'
 import '../Styles/PageStructure.css'
 
 

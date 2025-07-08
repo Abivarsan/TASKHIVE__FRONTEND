@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
-import Sidebar from '../../Compornents/Sidebar.jsx'
-import Topbar from '../../Compornents/Topbar.jsx'
+import Sidebar from '../../Components/Common-Components/Sidebar.jsx'
+import Topbar from '../../Components/Common-Components/Topbar.jsx'
 import '../Styles/PageStructure.css'
-import AdminDashboardComponent from '../../Components-Thusharaga/AdminDashboardComponent.js'
+import AdminDashboardComponent from '../../Components/Admin-Components/AdminDashboardComponent.js'
 import { useLocation } from 'react-router-dom'
 
 
 function AdminDashboard() {
+
 
 
 
